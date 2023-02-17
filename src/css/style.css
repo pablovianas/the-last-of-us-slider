@@ -1,0 +1,147 @@
+body{
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    color: var(--cor-texto-desktop);
+    font-family: 'Tongari-Regular', 'Helvetica Neue', Helvetica;
+    background-color: #8684841e;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+}
+
+.header .logo{
+    max-width: 250px;
+}
+
+.header nav{
+    display: flex;
+}
+
+.header .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: 0.3s ease-in-out;
+  
+}
+.header .menu li:hover{
+    transform: scale(1.1);
+}
+
+.header .menu li a{
+    color: var(--cor-texto-desktop);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.slider{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: -999;  
+}
+
+.slide{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.slide.ativo{
+    display: flex;
+    animation: show .7s;
+}
+
+@keyframes show {
+    from {
+        opacity: 0.75;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.informacoes{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 200px);
+    gap: 40px;
+    flex-direction: column;
+
+}
+.informacoes .titulo{
+    color: var(--cor-texto-desktop);
+}
+
+.informacoes .descricao{
+    width: 40%;
+    font-size: 25px;
+  
+}
+
+.informacoes .leia-mais{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    align-self: flex-start;
+    transition: ease-in .2s;
+    cursor: pointer;
+    color: var(--cor-texto-desktop);
+    background: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+}
+.informacoes .leia-mais:hover{
+    transform: scale(1.2);
+}
+
+.botoes-slider{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes-slider .botao{
+    background-color: hsla(0,0%,100%,.5);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    caret-color: transparent;
+}
+
+.botoes-slider .botao.selecionado{
+    background: var(--cor-botao-slider-desktop);
+}
+
+.menu-lateral{
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    top: 0; 
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-lateral ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.menu-lateral .icons{
+    width: 30px;
+    filter: invert(75%);
+}
