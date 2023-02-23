@@ -1,4 +1,4 @@
-# Hogwarts Legacy - Slider
+# The Last of Us - Slider
 
 A simple slider with game pictures and some informations about it. Inspired on game website. 
 

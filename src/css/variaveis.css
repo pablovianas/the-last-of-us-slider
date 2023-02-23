@@ -1,6 +1,5 @@
 :root{
-    --cor-texto-desktop: #feb10d;
-    --cor-botao-slider-desktop: #a77916;
-    --cor-texto-tablet: #f9f4f4cc;
-    --cor-texto-responsivo: #ffffffd8;
+    --cor-texto-desktop: #ffffffd8;
+    --cor-botao-slider: #a77916;
+    --cor-fundo-botao-slider: hsla(0,0%,100%,.5);
 }
